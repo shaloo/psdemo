@@ -1,7 +1,6 @@
 language: python
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "xenial" ]]; then sudo apt-get install libenchant-dev; fi
   - pip install -r requirements.txt # install the required packages
 
 script:
