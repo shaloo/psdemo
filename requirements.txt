@@ -1,6 +1,6 @@
 Sphinx==1.8.5
 sphinx_rtd_theme==0.4.3
-pyEnchant==2.0.0
+pyEnchant==1.6.6-2 
 sphinx-tabs==1.1.11
 sphinxcontrib-spelling==4.2.1
 imagesize==1.1.0
