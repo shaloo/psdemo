@@ -1,6 +1,9 @@
 language: python
 os: osx
 
+python:
+  - 3.4
+
 install:
   - pip install -r requirements.txt # install the required packages
 
