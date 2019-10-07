@@ -14,6 +14,8 @@ script:
   - cd docs
   - make html
   - cd ..
+  - mkdir _build
+  - mv docs/_build/html _build/.
 
 # Ask Travis CI to copy the documentation to the gh-pages branch of your GitHub repository
 
