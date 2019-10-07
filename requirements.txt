@@ -1,9 +1,9 @@
 Sphinx==1.8.5
-sphinx_rtd_theme==1.1.1
+sphinx_rtd_theme==0.4.3
 pyEnchant==2.0.0
 sphinx-tabs==1.1.11
 sphinxcontrib-spelling==4.2.1
-imagesize==0.7.1
+imagesize==1.1.0
 Pillow==4.3.0
 recommonmark==0.6.0
 sphinx-markdown-tables==0.0.9
