@@ -1,0 +1,29 @@
+/* Change side navigation bg color to pulsesecure image */
+.wy-side-nav-search  {
+   margin: 2px 2px 2px 2px ;
+   background-color: #4ea91b;
+   background-image: url("psdemo.png");
+   background-size: 35px, 35px;
+   background-repeat: no-repeat;
+   background-position: 2% 4%;
+}
+
+.logo {
+  opacity: 0.75 ;
+  border: 2px solid white;
+}
+
+.version {
+  text-decoration-line: overline underline;
+  text-decoration-style: dotted;
+  font-style: italic;
+}
+
+.wy-form {
+  border: 2px solid white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+

@@ -20,6 +20,11 @@ API for some functionality
 
 TBD
 
+Pet Store APIs
+++++++++++++++
+
+.. swaggerv2doc:: https://petstore.swagger.io/v2/swagger.json
+
 Example Code
 ------------
 
