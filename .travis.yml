@@ -4,10 +4,10 @@ install:
   - pip install -r requirements.txt # install the required packages
 
 script:
+  - if [[ "$TRAVIS_OS_NAME" == "xenial" ]]; then sudo apt-get install libenchant-dev; fi
   - cd docs
   - make html
-  # Let GitHub know not to use jekyll to compile the docs
-  - touch _build/html/.nojekyll
+  - cd ..
 
 # Ask Travis CI to copy the documentation to the gh-pages branch of your GitHub repository
 
