@@ -117,6 +117,17 @@ rst_epilog = """
 """ % { "new_product_name": new_product_name ,
 }
 
+# Hide Page source if Edit on GitHub is to be visible 
+
+html_show_sourcelink = False
+
+html_context = {
+    "display_feedback": True,
+    "psdemo_display_github": True,
+    #"last_updated": True,
+    "github_user": "shaloo",
+    "github_repo": "psdemo",
+}
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
