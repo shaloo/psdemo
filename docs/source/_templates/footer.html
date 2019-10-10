@@ -5,6 +5,17 @@
     <ul>
     <a href="https://www-prev.pulsesecure.net/techpubs/" style="float:left;">Pulse Secure TechPubs Archive</a>
     </ul>
+            {% if pagename == 'index' %}
+                  <a href="../latex/psdemo.pdf" class="fa"style="float:right;">Download complete docs as a single PDF</a>
+            {% elif pagename == 'relnotes' %}
+                  <a href="../latex/relnotes.pdf" class="fa" style="float:right;">Download Release Notes as PDF</a>
+            {% elif pagename == 'dev-guide' %}
+                  <a href="../latex/dev-guide.pdf" class="fa" style="float:right;">Download Developer's Guide as PDF</a>
+            {% elif pagename == 'user-guide' %}
+                  <a href="../latex/user-guide.pdf" class="fa" style="float:right;">Download User Guide as PDF</a>
+            {% elif pagename == 'faq' %}
+                  <a href="../latex/faq.pdf" class="fa" style="float:right;">Download FAQ as PDF</a>
+            {% endif %}
     </p>
     {{ super() }}
 {% endblock %}
