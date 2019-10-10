@@ -23,12 +23,12 @@ project = u'psdemo'
 copyright = u'© 2019 by Pulse Secure, LLC. All rights reserved'
 author = u'Shaloo Shalini'
 
-# The short X.Y version
-version = u'1.0 '
-
 # The full version, including alpha/beta/rc tags
 release = u'(alpha)'
 
+# The short X.Y version
+short_version = u'1.0'
+version = u'Version 1.0 '+release
 
 # -- General configuration ---------------------------------------------------
 
@@ -70,6 +70,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
+
 language = None
 
 # List of patterns, relative to source directory, that match files and
@@ -78,7 +79,8 @@ language = None
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'friendly'
+#pygments_style = None
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -86,7 +88,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_logo = '_static/psdemo_logo.png'
+
+#html_theme = 'nature'
 html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -110,7 +113,7 @@ html_static_path = ['_static']
 
 # Product Name variable
 
-new_product_name = 'PSDemoNew'
+new_product_name = 'PSdemo'
 
 rst_epilog = """
 .. |Product_name| replace:: %(new_product_name)s
@@ -120,6 +123,7 @@ rst_epilog = """
 # Hide Page source if Edit on GitHub is to be visible 
 
 html_show_sourcelink = False
+html_show_sphinx = False
 
 html_context = {
     "display_feedback": True,
@@ -127,6 +131,7 @@ html_context = {
     #"last_updated": True,
     "github_user": "shaloo",
     "github_repo": "psdemo",
+    "github_url": "https:/github.com/shaloo/psdemo/tree/master/docs/source/",
 }
 
 # Custom sidebar templates, must be a dictionary that maps document names
@@ -148,10 +153,14 @@ htmlhelp_basename = 'psdemodoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_logo = '_static/psdemo_logo.png'
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
+
+    'releasename': short_version,
 
     # The font size ('10pt', '11pt' or '12pt').
     #
@@ -159,8 +168,33 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': r'''
+    \usepackage{sphinx}
+    \makeatletter
+    \newcommand{\sphinxbackoftitlepage}{%
+    \vspace*{\fill}
+    \begingroup
+      \mbox{}
+      \vfill    
+      Pulse Secure, LLC
+      \newline
+      2700 Zanker Road, Suite 200
+      \newline
+      San Jose, CA 95134 
+      \newline
+      https://www.pulsesecure.net
+      \vspace{2cm}
+      \newline
+      \vspace{3cm}
+      © 2019 by Pulse Secure, LLC. All rights reserved
 
+    \endgroup
+    \vspace*{\fill}
+    \clearpage
+    }
+    \makeatother
+    ''',
+    
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
@@ -170,8 +204,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'psdemo.tex', u'psdemo Documentation',
-     u'Shaloo Shalini', 'manual'),
+    (master_doc, 'psdemo.tex', u'PS Demo Documentation',
+     '', 'manual'),
 ]
 
 
