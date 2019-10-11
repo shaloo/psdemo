@@ -20,13 +20,10 @@ script:
   - cd docs
   - make html
   - make latexpdf
+  - make install
   - cd ..
   - mkdir _build
   - mv docs/_build/html _build/.
-  - mkdir _build/latex
-  - mv docs/_build/latex/*.pdf _build/latex/.
-  - ls _build
-  - ls _build/latex
 
 # Ask Travis CI to copy the documentation to the gh-pages branch of your GitHub repository
 
