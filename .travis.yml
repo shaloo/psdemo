@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
       - libenchant-dev
-      - latexmk
+      - texlive-latex-recommended
 
 install:
   - pip install -r requirements.txt # install the required packages
