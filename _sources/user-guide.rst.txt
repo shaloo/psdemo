@@ -17,7 +17,7 @@ TBD
 Introduction
 -------------
 
-TBD
+This is the introduction of ...
 
 Section A
 ----------
