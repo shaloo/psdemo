@@ -3,15 +3,10 @@
 |Product_name| Release Notes
 =============================
 
-Pulse Connect Secure Release Notes
-
-Pulse Secure, LLC
-
-2700 Zanker Road, Suite 200
-
-San Jose, CA 95134 https://www.pulsesecure.net
-
-© 2019 by Pulse Secure, LLC. All rights reserved
+.. warning::
+        This is a sample release note only for demonstration purposes.
+    
+**Version 1.0**
 
 Introduction
 ------------
