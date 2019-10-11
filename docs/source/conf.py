@@ -138,6 +138,8 @@ html_context = {
     "github_user": "shaloo",
     "github_repo": "psdemo",
     "github_url": "https:/github.com/shaloo/psdemo/tree/master/docs/source/",
+    "github_version": "master",
+    "conf_py_path": "/docs/source/",
 }
 
 # Custom sidebar templates, must be a dictionary that maps document names

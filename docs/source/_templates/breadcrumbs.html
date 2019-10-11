@@ -7,7 +7,7 @@
                  <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/issues/new?title=Feedback%20on%20{% for doc in parents %}{{ doc.title|striptags|e }}%20%E2%80%94%20{% endfor %}{{ title|striptags|e }}&body=**Page:**%20{{ html_baseurl }}{{ pagename }}.html%0A%0A**Feedback:**" class="btn btn-sm btn-dark"> Give Feedback <span class="fa fa-bug"></span></a> 
             {% endif %}
             {% if psdemo_display_github %}
-                  <a href="https:/github.com/shaloo/psdemo/tree/master/docs/source/{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit Content on GitHub') }}</a>
+                  <a href="https://github.com/{{ github_user }}/{{ github_repo }}/tree/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst"{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit Content on GitHub') }}</a>
             {% endif %}
         {% else %}
             {{ breadcrumbs_aside }}
