@@ -1,4 +1,0 @@
-\select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}Hardware Platforms}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Platform Qualified System}{5}{section.2.1}
