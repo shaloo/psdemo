@@ -7,6 +7,8 @@ addons:
     packages:
       - libenchant-dev
       - texlive-latex-recommended
+      - texlive-latex-base
+      - texlive-fonts-recommended
       - latexmk
 
 install:
