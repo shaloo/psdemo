@@ -12,10 +12,11 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 # -- Project information -----------------------------------------------------
 
@@ -210,14 +211,20 @@ latex_show_urls = 'footer'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
+
+if on_rtd:
+  latex_documents = [
     (master_doc, 'psdemo.tex', u'PS Demo Documentation', '', 'manual'),
-#    (relnotes_doc, 'relnotes.tex', u'PSdemo Release Notes', u'Pulse Secure, LLC', 'manual'),
-#    (get_started_doc, 'get-started.tex', u'PSdemo Getting Started Guide', u'Pulse Secure, LLC', 'manual'),
-#    (dev_guide_doc, 'dev-guide.tex', u'PSdemo Developer\'s Guide', u'Pulse Secure, LLC', 'manual'),
-#    (user_guide_doc, 'user-guide.tex', u'PSdemo User\'s Guide', u'Pulse Secure, LLC', 'manual'),
-#    (faq_doc, 'faq.tex', u'PSdemo FAQ', u'Pulse Secure, LLC', 'manual'),
-]
+  ]
+else:
+  latex_documents = [
+    (master_doc, 'psdemo.tex', u'PS Demo Documentation', '', 'manual'),
+    (relnotes_doc, 'relnotes.tex', u'PSdemo Release Notes', u'Pulse Secure, LLC', 'manual'),
+    (get_started_doc, 'get-started.tex', u'PSdemo Getting Started Guide', u'Pulse Secure, LLC', 'manual'),
+    (dev_guide_doc, 'dev-guide.tex', u'PSdemo Developer\'s Guide', u'Pulse Secure, LLC', 'manual'),
+    (user_guide_doc, 'user-guide.tex', u'PSdemo User\'s Guide', u'Pulse Secure, LLC', 'manual'),
+    (faq_doc, 'faq.tex', u'PSdemo FAQ', u'Pulse Secure, LLC', 'manual'),
+  ]   
 
 
 # -- Options for manual page output ------------------------------------------
