@@ -23,8 +23,10 @@ script:
   - cd ..
   - mkdir _build
   - mv docs/_build/html _build/.
+  - mkdir _build/latex
+  - mv docs/_build/latex/*.pdf _build/latex/.
   - ls _build
-  - mv docs/_build/latex _build/.
+  - ls _build/latex
 
 # Ask Travis CI to copy the documentation to the gh-pages branch of your GitHub repository
 
@@ -35,5 +37,4 @@ deploy:
   keep-history: true
   on: 
      branch: master
-  local_dir: _build/
-#  local_dir: _build/html
+  local_dir: _build/html
