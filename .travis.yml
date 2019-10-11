@@ -13,9 +13,11 @@ install:
 script:
   - cd docs
   - make html
+  - make latexpdf
   - cd ..
   - mkdir _build
   - mv docs/_build/html _build/.
+  - mv docs/_build/latex _build/.
 
 # Ask Travis CI to copy the documentation to the gh-pages branch of your GitHub repository
 
