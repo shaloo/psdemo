@@ -1,5 +1,6 @@
 dist: xenial
 
+
 language: python
 
 addons:
@@ -8,6 +9,7 @@ addons:
       - libenchant-dev
       - texlive-latex-recommended
       - texlive-latex-base
+      - texlive-latex-extra
       - texlive-fonts-recommended
       - latexmk
 
