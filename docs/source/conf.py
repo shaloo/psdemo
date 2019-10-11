@@ -212,11 +212,11 @@ latex_show_urls = 'footer'
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'psdemo.tex', u'PS Demo Documentation', '', 'manual'),
-    (relnotes_doc, 'relnotes.tex', u'PSdemo Release Notes', u'Pulse Secure, LLC', 'manual'),
-    (get_started_doc, 'get-started.tex', u'PSdemo Getting Started Guide', u'Pulse Secure, LLC', 'manual'),
-    (dev_guide_doc, 'dev-guide.tex', u'PSdemo Developer\'s Guide', u'Pulse Secure, LLC', 'manual'),
-    (user_guide_doc, 'user-guide.tex', u'PSdemo User\'s Guide', u'Pulse Secure, LLC', 'manual'),
-    (faq_doc, 'faq.tex', u'PSdemo FAQ', u'Pulse Secure, LLC', 'manual'),
+#    (relnotes_doc, 'relnotes.tex', u'PSdemo Release Notes', u'Pulse Secure, LLC', 'manual'),
+#    (get_started_doc, 'get-started.tex', u'PSdemo Getting Started Guide', u'Pulse Secure, LLC', 'manual'),
+#    (dev_guide_doc, 'dev-guide.tex', u'PSdemo Developer\'s Guide', u'Pulse Secure, LLC', 'manual'),
+#    (user_guide_doc, 'user-guide.tex', u'PSdemo User\'s Guide', u'Pulse Secure, LLC', 'manual'),
+#    (faq_doc, 'faq.tex', u'PSdemo FAQ', u'Pulse Secure, LLC', 'manual'),
 ]
 
 
