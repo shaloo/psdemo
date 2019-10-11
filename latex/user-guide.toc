@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Revision History}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Introduction}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}Section A}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Part 1}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Part 2}{7}{section.3.2}
+\contentsline {chapter}{\numberline {4}Section B}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}How to do xyz}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}How to setup mno}{9}{section.4.2}
