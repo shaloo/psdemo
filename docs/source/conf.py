@@ -119,7 +119,7 @@ html_static_path = ['_static']
 
 # Product Name variable
 
-new_product_name = 'PSdemo'
+new_product_name = 'PSDemo'
 
 rst_epilog = """
 .. |Product_name| replace:: %(new_product_name)s
