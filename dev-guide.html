@@ -685,6 +685,117 @@
 <div class="section" id="user">
 <h4><a class="toc-backref" href="#id6">user</a><a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h4>
 <div class="admonition">
+<p class="first admonition-title">POST /user</p>
+<p>Create user<ul class="simple">
+<li><strong>Description: 
+</strong>This can only be done by the logged in user.</li>
+<li><strong>Consumes: 
+</strong>[‘application/json’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body</td>
+<td>body</td>
+<td>Created user object</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>default - successful operation</em></p>
+</div>
+<div class="admonition">
+<p class="first admonition-title">POST /user/createWithArray</p>
+<p>Creates list of users with given input array<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Consumes: 
+</strong>[‘application/json’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body</td>
+<td>body</td>
+<td>List of user object</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>default - successful operation</em></p>
+</div>
+<div class="admonition">
+<p class="first admonition-title">POST /user/createWithList</p>
+<p>Creates list of users with given input array<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Consumes: 
+</strong>[‘application/json’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body</td>
+<td>body</td>
+<td>List of user object</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>default - successful operation</em></p>
+</div>
+<div class="admonition">
 <p class="first admonition-title">GET /user/{username}</p>
 <p>Get user by user name<ul class="simple">
 <li><strong>Description: 
@@ -866,117 +977,6 @@
 </tr>
 </thead>
 <tbody valign="top">
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>default - successful operation</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /user</p>
-<p>Create user<ul class="simple">
-<li><strong>Description: 
-</strong>This can only be done by the logged in user.</li>
-<li><strong>Consumes: 
-</strong>[‘application/json’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body</td>
-<td>body</td>
-<td>Created user object</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>default - successful operation</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /user/createWithArray</p>
-<p>Creates list of users with given input array<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Consumes: 
-</strong>[‘application/json’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body</td>
-<td>body</td>
-<td>List of user object</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>default - successful operation</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /user/createWithList</p>
-<p>Creates list of users with given input array<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Consumes: 
-</strong>[‘application/json’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body</td>
-<td>body</td>
-<td>List of user object</td>
-<td></td>
-</tr>
 </tbody>
 </table>
 <p><strong>Responses</strong></p>
