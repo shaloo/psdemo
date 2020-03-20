@@ -218,131 +218,6 @@
 <div class="section" id="pet">
 <h4><a class="toc-backref" href="#id4">pet</a><a class="headerlink" href="#pet" title="Permalink to this headline">¶</a></h4>
 <div class="admonition">
-<p class="first admonition-title">GET /pet/{petId}</p>
-<p>Find pet by ID<ul class="simple">
-<li><strong>Description: 
-</strong>Returns a single pet</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>petId</td>
-<td>path</td>
-<td>ID of pet to return</td>
-<td>integer</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p><em>200 - successful operation</em></p>
-<p><em>400 - Invalid ID supplied</em></p>
-<p class="last"><em>404 - Pet not found</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /pet/{petId}</p>
-<p>Updates a pet in the store with form data<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Consumes: 
-</strong>[‘application/x-www-form-urlencoded’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>petId</td>
-<td>path</td>
-<td>ID of pet that needs to be updated</td>
-<td>integer</td>
-</tr>
-<tr class="row-odd"><td>name</td>
-<td>formData</td>
-<td>Updated name of the pet</td>
-<td>string</td>
-</tr>
-<tr class="row-even"><td>status</td>
-<td>formData</td>
-<td>Updated status of the pet</td>
-<td>string</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>405 - Invalid input</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">DELETE /pet/{petId}</p>
-<p>Deletes a pet<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>api_key</td>
-<td>header</td>
-<td></td>
-<td>string</td>
-</tr>
-<tr class="row-odd"><td>petId</td>
-<td>path</td>
-<td>Pet id to delete</td>
-<td>integer</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p><em>400 - Invalid ID supplied</em></p>
-<p class="last"><em>404 - Pet not found</em></p>
-</div>
-<div class="admonition">
 <p class="first admonition-title">POST /pet/{petId}/uploadImage</p>
 <p>uploads an image<ul class="simple">
 <li><strong>Description: 
@@ -537,16 +412,13 @@
 <p><em>200 - successful operation</em></p>
 <p class="last"><em>400 - Invalid tag value</em></p>
 </div>
-</div>
-<div class="section" id="store">
-<h4><a class="toc-backref" href="#id5">store</a><a class="headerlink" href="#store" title="Permalink to this headline">¶</a></h4>
 <div class="admonition">
-<p class="first admonition-title">GET /store/inventory</p>
-<p>Returns pet inventories by status<ul class="simple">
+<p class="first admonition-title">GET /pet/{petId}</p>
+<p>Find pet by ID<ul class="simple">
 <li><strong>Description: 
-</strong>Returns a map of status codes to quantities</li>
+</strong>Returns a single pet</li>
 <li><strong>Produces: 
-</strong>[‘application/json’]</li>
+</strong>[‘application/json’, ‘application/xml’]</li>
 </ul>
 </p>
 <p><strong>Parameters</strong></p>
@@ -565,10 +437,146 @@
 </tr>
 </thead>
 <tbody valign="top">
+<tr class="row-even"><td>petId</td>
+<td>path</td>
+<td>ID of pet to return</td>
+<td>integer</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Responses</strong></p>
-<p class="last"><em>200 - successful operation</em></p>
+<p><em>200 - successful operation</em></p>
+<p><em>400 - Invalid ID supplied</em></p>
+<p class="last"><em>404 - Pet not found</em></p>
+</div>
+<div class="admonition">
+<p class="first admonition-title">POST /pet/{petId}</p>
+<p>Updates a pet in the store with form data<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Consumes: 
+</strong>[‘application/x-www-form-urlencoded’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>petId</td>
+<td>path</td>
+<td>ID of pet that needs to be updated</td>
+<td>integer</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>formData</td>
+<td>Updated name of the pet</td>
+<td>string</td>
+</tr>
+<tr class="row-even"><td>status</td>
+<td>formData</td>
+<td>Updated status of the pet</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>405 - Invalid input</em></p>
+</div>
+<div class="admonition">
+<p class="first admonition-title">DELETE /pet/{petId}</p>
+<p>Deletes a pet<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>api_key</td>
+<td>header</td>
+<td></td>
+<td>string</td>
+</tr>
+<tr class="row-odd"><td>petId</td>
+<td>path</td>
+<td>Pet id to delete</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p><em>400 - Invalid ID supplied</em></p>
+<p class="last"><em>404 - Pet not found</em></p>
+</div>
+</div>
+<div class="section" id="store">
+<h4><a class="toc-backref" href="#id5">store</a><a class="headerlink" href="#store" title="Permalink to this headline">¶</a></h4>
+<div class="admonition">
+<p class="first admonition-title">POST /store/order</p>
+<p>Place an order for a pet<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Consumes: 
+</strong>[‘application/json’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body</td>
+<td>body</td>
+<td>order placed for purchasing the pet</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p><em>200 - successful operation</em></p>
+<p class="last"><em>400 - Invalid Order</em></p>
 </div>
 <div class="admonition">
 <p class="first admonition-title">GET /store/order/{orderId}</p>
@@ -644,8 +652,41 @@
 <p class="last"><em>404 - Order not found</em></p>
 </div>
 <div class="admonition">
-<p class="first admonition-title">POST /store/order</p>
-<p>Place an order for a pet<ul class="simple">
+<p class="first admonition-title">GET /store/inventory</p>
+<p>Returns pet inventories by status<ul class="simple">
+<li><strong>Description: 
+</strong>Returns a map of status codes to quantities</li>
+<li><strong>Produces: 
+</strong>[‘application/json’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>200 - successful operation</em></p>
+</div>
+</div>
+<div class="section" id="user">
+<h4><a class="toc-backref" href="#id6">user</a><a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h4>
+<div class="admonition">
+<p class="first admonition-title">POST /user/createWithArray</p>
+<p>Creates list of users with given input array<ul class="simple">
 <li><strong>Description: 
 </strong></li>
 <li><strong>Consumes: 
@@ -672,18 +713,51 @@
 <tbody valign="top">
 <tr class="row-even"><td>body</td>
 <td>body</td>
-<td>order placed for purchasing the pet</td>
+<td>List of user object</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Responses</strong></p>
-<p><em>200 - successful operation</em></p>
-<p class="last"><em>400 - Invalid Order</em></p>
+<p class="last"><em>default - successful operation</em></p>
 </div>
+<div class="admonition">
+<p class="first admonition-title">POST /user/createWithList</p>
+<p>Creates list of users with given input array<ul class="simple">
+<li><strong>Description: 
+</strong></li>
+<li><strong>Consumes: 
+</strong>[‘application/json’]</li>
+<li><strong>Produces: 
+</strong>[‘application/json’, ‘application/xml’]</li>
+</ul>
+</p>
+<p><strong>Parameters</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body</td>
+<td>body</td>
+<td>List of user object</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Responses</strong></p>
+<p class="last"><em>default - successful operation</em></p>
 </div>
-<div class="section" id="user">
-<h4><a class="toc-backref" href="#id6">user</a><a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h4>
 <div class="admonition">
 <p class="first admonition-title">GET /user/{username}</p>
 <p>Get user by user name<ul class="simple">
@@ -901,80 +975,6 @@
 <tr class="row-even"><td>body</td>
 <td>body</td>
 <td>Created user object</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>default - successful operation</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /user/createWithArray</p>
-<p>Creates list of users with given input array<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Consumes: 
-</strong>[‘application/json’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body</td>
-<td>body</td>
-<td>List of user object</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Responses</strong></p>
-<p class="last"><em>default - successful operation</em></p>
-</div>
-<div class="admonition">
-<p class="first admonition-title">POST /user/createWithList</p>
-<p>Creates list of users with given input array<ul class="simple">
-<li><strong>Description: 
-</strong></li>
-<li><strong>Consumes: 
-</strong>[‘application/json’]</li>
-<li><strong>Produces: 
-</strong>[‘application/json’, ‘application/xml’]</li>
-</ul>
-</p>
-<p><strong>Parameters</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
-<th class="head">Position</th>
-<th class="head">Description</th>
-<th class="head">Type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body</td>
-<td>body</td>
-<td>List of user object</td>
 <td></td>
 </tr>
 </tbody>
