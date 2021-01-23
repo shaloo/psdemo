@@ -30,7 +30,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $token # defined via the Travis interface
+  github_token: $GITHUB_TOKEN # defined via the Travis interface
   keep-history: true
   on: 
      branch: master
