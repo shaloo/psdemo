@@ -72,18 +72,10 @@ body:
       value: |
         * Provide screenshots where appropriate
         * Provide a minimal code snippet / [rnplay](https://rnplay.org/) example that reproduces the bug.
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more information about your bug?
-      placeholder: ex. youremail@youremailprovider.com
-    validations:
-      required: false
   - type: textarea
     id: dev-env
     attributes:
-      label: Development Environment
+      label: "## Development Environment"
       description: Describe your development environment package version and other details.
       placeholder: placeholder data
       value: |
@@ -95,3 +87,11 @@ body:
         * Are you using Mac, Linux or Windows desktop platform?
     validations:
         required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more information about your bug?
+      placeholder: ex. youremail@youremailprovider.com
+    validations:
+      required: false
