@@ -26,7 +26,9 @@ body:
       label: Issue Checklist
       description: Before you submit the issue, verify it is indeed a bug and not a question.
       options:
-        - label: Is this something you can *debug and fix*? Send a pull request! Your contributions are valuable to us.
-          required: true
+        - label: Is this something you can **debug and fix**? Send a pull request! Your contributions are valuable to us.
+          required: false
         - label: Have a **usage question**? Ask your question on [StackOverflow](https://stackoverflow.com/search?q=%22arcana+network%22%2B%22XAR%22) or [Discord channel](https://discord.com/invite/w6ej4FtqYS). We use GitHub solely for bugs and feature enhancement requests.
-          required: true
+          required: false
+        - label: Is this a support query related to your specific use case? Contact us at [support@arcana.network](mailto:support@arcana.network).
+          required: false
