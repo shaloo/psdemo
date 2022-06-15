@@ -60,6 +60,3 @@ body:
       placeholder: ex. youremail@youremailprovider.com
     validations:
       required: false
- - type: markdown
-    attributes:
-      value: "## Help us Recreate your Bug!"
