@@ -24,14 +24,6 @@ body:
           required: false
         - label: Is this a support query related to your specific use case? Contact us at [support@arcana.network](mailto:support@arcana.network).
           required: false
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more information about your bug?
-      placeholder: ex. youremail@youremailprovider.com
-    validations:
-      required: false
   - type: markdown
     attributes:
       value: "## Create GitHub Issue"
@@ -60,3 +52,11 @@ body:
       value: "This error should show up or this value should be returned, etc."
     validations:
       required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more information about your bug?
+      placeholder: ex. youremail@youremailprovider.com
+    validations:
+      required: false
