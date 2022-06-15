@@ -62,11 +62,16 @@ body:
       description: Describe how to reproduce the bug step by step.
       placeholder: Details
       value: | 
-        "1. Do this... 
+         1. Do this... 
          2. Next do this... 
-         3. ..."
+         3. ...
     validations:
         required: true
+  - type: markdown
+    attributes:
+      value: |
+        * Provide screenshots where appropriate
+        * Provide a minimal code snippet / [rnplay](https://rnplay.org/) example that reproduces the bug.
   - type: input
     id: contact
     attributes:
