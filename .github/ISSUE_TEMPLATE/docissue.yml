@@ -34,7 +34,7 @@ body:
       required: false
   - type: markdown
     attributes:
-      value: Create GitHub Issue
+      value: "## Create GitHub Issue"
   - type: markdown
     attributes:
       value: |
