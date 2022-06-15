@@ -75,7 +75,7 @@ body:
   - type: textarea
     id: dev-env
     attributes:
-      label: "## Development Environment"
+      label: Development Environment
       description: Describe your development environment package version and other details.
       placeholder: placeholder data
       value: |
