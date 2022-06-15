@@ -12,14 +12,6 @@ body:
         :wave:  Hey, there!
         *Thank you for using [Arcana Network Repo Name. For e.g. Storage, Auth, Demo-App etc.]*
         Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more information about your bug?
-      placeholder: ex. youremail@youremailprovider.com
-    validations:
-      required: false
   - type: checkboxes
     id: issue-checklist
     attributes:
@@ -32,3 +24,11 @@ body:
           required: false
         - label: Is this a support query related to your specific use case? Contact us at [support@arcana.network](mailto:support@arcana.network).
           required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more information about your bug?
+      placeholder: ex. youremail@youremailprovider.com
+    validations:
+      required: false
