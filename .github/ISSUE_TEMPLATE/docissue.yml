@@ -1,7 +1,7 @@
 name: Documentation Bug Report
 description: File a bug report
 title: "[Docs Bug]: "
-labels: ["docs, bug, triage"]
+labels: ["docs", "bug", "triage"]
 assignees:
   - shaloo
 body:
