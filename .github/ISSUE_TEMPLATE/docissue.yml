@@ -62,7 +62,7 @@ body:
       description: Describe how to reproduce the bug step by step.
       placeholder: Details
       value: "1. Do this... 2. Next do this... 3. ..."
-      validations:
+    validations:
         required: true
   - type: input
     id: contact
