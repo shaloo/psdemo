@@ -9,8 +9,8 @@ body:
     attributes:
       value: |
       
-        :wave:  Hey, there!
-        *Thank you for using [Arcana Network Repo Name. For e.g. Storage, Auth, Demo-App etc.]*
+        :wave:  **Hey, there!**
+        *Thank you for using psdemo repository.*
         Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
   - type: checkboxes
     id: issue-checklist
@@ -60,3 +60,10 @@ body:
       placeholder: ex. youremail@youremailprovider.com
     validations:
       required: false
+ - type: markdown
+    attributes:
+      value: |
+      
+        "## Help us Recreate your Bug!"
+        *Thank you for using psdemo repository.*
+        Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
