@@ -20,7 +20,7 @@ body:
     validations:
       required: false
   - type: checkboxes
-     id: issue-checklist
+     id: issuechecklist
      attributes:
       label: Issue Checklist
       description: Before you submit this issue, please make sure raising a bug is the right approach for your issue
