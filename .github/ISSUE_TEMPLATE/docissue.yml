@@ -62,8 +62,5 @@ body:
       required: false
  - type: markdown
     attributes:
-      value: |
-      
-        "## Help us Recreate your Bug!"
-        *Thank you for using psdemo repository.*
-        Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
+      value: | "## Help us Recreate your Bug!"
+        
