@@ -32,3 +32,15 @@ body:
       placeholder: ex. youremail@youremailprovider.com
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+      
+        "## Create GitHub Issue"
+    - type: markdown
+    attributes:
+      value: |
+      
+        Make sure to add all the information needed to understand the bug or your feature request. 
+        
+        If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
