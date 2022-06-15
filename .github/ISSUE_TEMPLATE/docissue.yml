@@ -8,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        :wave:  Hey, there!|
+        Thank you for using [Arcana Network Repo Name. For e.g. Storage, Auth, Demo-App etc.]!
   - type: input
     id: contact
     attributes:
