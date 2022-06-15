@@ -54,7 +54,16 @@ body:
       required: true
   - type: markdown
     attributes:
-      value: "## Create Issue"
+      value: "## Help us Recreate the Bug"
+  - type: textarea
+    id: steps
+    attributes:
+      label: List the Steps
+      description: Describe how to reproduce the bug step by step.
+      placeholder: Details
+      value: "1. Do this... 2. Next do this... 3. ..."
+      validations:
+        required: true
   - type: input
     id: contact
     attributes:
