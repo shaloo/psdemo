@@ -10,7 +10,7 @@ body:
       value: |
       
         :wave:  Hey, there!
-        Thank you for using [Arcana Network Repo Name. For e.g. Storage, Auth, Demo-App etc.]
+        *Thank you for using [Arcana Network Repo Name. For e.g. Storage, Auth, Demo-App etc.]*
         Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
   - type: input
     id: contact
