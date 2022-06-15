@@ -62,5 +62,4 @@ body:
       required: false
  - type: markdown
     attributes:
-      value: | "## Help us Recreate your Bug!"
-        
+      value: "## Help us Recreate your Bug!"
