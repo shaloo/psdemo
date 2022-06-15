@@ -1,9 +1,9 @@
-name: Bug Report
+name: Documentation Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: "[Docs Bug]: "
+labels: ["docs", "bug", "triage"]
 assignees:
-  - octocat
+  - shaloo
 body:
   - type: markdown
     attributes:
